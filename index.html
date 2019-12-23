@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>SiDUS</title>
+        <link rel="stylesheet" type="text/css" href="css/font/fonts.css">
+        <link rel="stylesheet" type="text/css" href="css/default.css">
+        <link rel="stylesheet" type="text/css" href="css/slick.css">
+        <link rel="stylesheet" type="text/css" href="css/fullpage.min.css">
+        <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">-->
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/include.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+        <script src="js/slick.js" type="text/javascript"></script>
+        <script src="js/fullpage.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#fullpage').fullpage({
+                    //이동
+                    
+                    //스크롤
+                    scrollingSpeed: 1000,
+                    
+                    //디자인
+                    
+	           });
+                $(".hdR").slick({
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed:3500,
+                });
+                
+                $(".panelBg").hide();
+                $(".panel").click(function(){
+                    $(".panelBg").fadeIn();
+                    $(".panelM").css("width","960px");
+                })
+                $(".closeBtn,.panelBg").click(function(){
+                    $(".panelM").css("width","0");
+                    $(".panelBg").fadeOut();
+                });
+            })
+        </script>
+    </head>
+    <body>
+    <div class="wrap">   
+        <div id="fullpage">
+           <!--헤더-->
+            <div class="header section active" id="section0">
+              <!--헤더 왼-->
+               <div class="hdL">
+                    <h1><a href="#"><img src="images/LOGO.png"></a></h1>
+                    <select class="othM">
+                        <option>Entertainment.</option>
+                        <option>Media</option>
+                    </select>
+                    <br>
+                    <select class="lang">
+                        <option>KOREAN</option>
+                        <option>ENGLISH</option>
+                        <option>CHINESE</option>
+                        <option>JAPNESE</option>
+                    </select>
+                    <!--패널-->
+                    <div class="panel"><a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a></div>
+                    <div class="panelBg"></div>
+                    <ul class="panelM">
+                        <li class="closeBtn"><a href="#"><img src="images/closeBtn.png"></a></li>
+                        <li><a href="#">ENT.News</a></li>
+                        <li><a href="#">Management</a></li>
+                        <li><a href="#">Drama</a></li>
+                        <li><a href="#">Film</a></li>
+                        <li><a href="#">Academy</a></li>
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">STAR</a></li>
+                    </ul>
+                    <!--패널-->
+                </div>
+              <!--헤더 왼-->
+              <!--헤더 오-->
+                <div class="hdR">
+                    <div>
+                        <img src="images/header_slide1.png" height="100%">
+                    </div>
+                    <div>
+                        <img src="images/header_slide2.png" height="100%">
+                    </div>
+                    <div>
+                        <img src="images/header_slide3.png" height="100%">
+                    </div>
+                    <div>
+                        <img src="images/header_slide4.png" height="100%">
+                    </div>
+                </div>
+              <!--헤더 오-->
+            </div>
+           <!--헤더-->
+            <!--메인슬라이더-->
+            <div class="section" id="section1">
+                <div class="slide slide01 active">
+                    <a href="#">
+                       <h2><img src="images/mainSlide_tit.png"></h2>
+                        <img src="images/mainSlider1.png">
+                        <p><span>화려한 연출과 웅장한 무대 위<br>군중을 압도시키는 연기와 노래</span>뮤지컬 '마리 앙투아네트' 속 배우 '손준호'를 만나보세요.</p>
+                    </a>
+                </div>
+                <div class="slide slide02">
+                    <a href="#"><img src="images/mainSlider2.jpg" width="100%"></a>
+                </div>
+                <div class="slide slide03">
+                    <a href="#">
+                        <img src="images/mainSlider3.png" width="100%">
+                        <img src="images/mainSlider3-2.png"  class="titBox">
+                    </a>
+                </div>
+                <div class="slide slide04">
+                    <a href="#"><img src="images/mainSlider4.png"></a>
+                </div>
+            </div>
+            <!--컨텐츠1-->
+            <div class="section" id="section2">
+               <h2><a href="#"><img src="images/con1_tit.png"></a></h2>
+                <ul class="con1 inner cf">
+                    <li><a href="#"><img src="images/con1_ico2.png"><br>드라마 [꽃파당]의 막내<br>'이고은'</a></li>
+                    <li><a href="#"><img src="images/con1_ico2.png"><br>[눈물이 빗물되어]mv<br>'솔비'</a></li>
+                    <li><a href="#"><img src="images/con1_ico2.png"><br>상큼 터지는 FILA화보<br>'김유정'</a></li>
+                    <li><a href="#"><img src="images/con1_ico2.png"><br>마리앙투아네트 뮤지컬 속<br>'손준호'</a></li>
+                    <li><a href="#"><img src="images/con1_ico2.png"><br>드라마[어하루]의 귀요미<br>'김혜윤'</a></li>
+                    <li><a href="#"><img src="images/con1_ico2.png"><br>느낌있는 프로필 사진촬영<br>'장혁'</a></li>
+                    <li><a href="#"><img src="images/con1_ico2.png"><br>드라마 [녹두전] 빛나는 조연<br>'송채윤'</a></li>
+                    <li><a href="#"><img src="images/con1_ico2.png"><br>인간 [그라치아] 화보촬영<br>'조보아'</a></li>
+                    <li><a href="#"><img src="images/con1_ico2.png"><br>드라마 [시크릿부티크]<br>'류승수'</a></li>
+                    <li><a href="#"><img src="images/con1_ico3.png"><br>MORE</a></li>
+                </ul>
+            </div>
+            <!--컨텐츠2-->
+            <div class="section" id="section3">
+               <div class="con2 inner">
+                   <h2><a href="#"><img src="images/con2_tit.png"></a></h2>
+                    <dl><a href="#">
+                       <img src="images/con2_pic1.png">
+                        <dt>오연서<br>sidusHQ와 전속계약 체결, 새로운도약...</dt>
+                        <dd>배우 오연서가 sidusHQ와 전속계약을 맺고 새로운<br>도약을 예고했다.<br><br>소속사 sidusHQ 매니지먼트 관계자는<br>"오연서와 소중한 인연을 시작하게 돼 기쁜 마음을<br>전한다. 많은 작품을 통해 보여준 연기력뿐 아니...</dd>
+                    </a></dl>
+                    <dl><a href="#">
+                       <img src="images/con2_pic2.png">
+                        <dt>동현<br>sidusHQ와 전속계약 체결 "적극 지원...</dt>
+                        <dd>그룹 보이프랜드 동현이 새 소속사를 찾았다.<br><br>21일 sidusHQ는 동현과의 전속계약 체결 소식을<br>알렸다. 지난 2011년 보이프랜드 싱글앨범<br>'BOYFRIEND'로 데뷔, 리더로서 그룹을 이끌며<br>활동해 온 동현은 뮤지컬 '총각네 야채가게','형제...</dd>
+                    </a></dl>
+                    <dl><a href="#">
+                       <img src="images/con2_pic3.png">
+                        <dt>이채영<br>[여름아부탁해] "외모 아닌 연기로 기억...</dt>
+                        <dd>이채영은 연기에 대한 호평이 늘어날 때마다<br>행복해하고 감격하고 있었다.<br><br>KBS1 '여름아부탁해'(극본 구지원/연출 성준해)가<br>지난 25일 막을 내렸다. 전작 '비켜라운명아' 보다<br>조금 더 앞선 23%대 시청률로 회려하게 말이다...</dd>
+                    </a></dl>
+                    <dl><a href="#">
+                       <img src="images/con2_pic4.png">
+                        <dt>김혜윤<br>[어하루] "6개월 동안 은단오로 지내 행복"</dt>
+                        <dd>배우 김혜윤이 아쉬운 마음을 듬뿍 담아 마지막<br>인사를 전했다.<br><br>김혜윤은 22일 MBC 수목드라마 '어쩌다 발견한<br>하루'(이하 '어하루')의 종영 소감을 공개, 첫 주연<br>작품인 만큼 깊은 애정을 담은 인사를 건넸다...</dd>
+                    </a></dl>
+                </div>
+                <a href="#" class="more2"><img src="images/arrow_r.png"></a>
+            </div>
+            <!--푸터-->
+            <div class="section fp-auto-height" id="section4">
+                <ul class="ftS cf inner">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <div class="ft inner">
+                    <h3><a href="#"><img src="images/ft_logo.png"></a></h3>
+                    <p>주)아이에이치큐 서울특별시 강남구 선릉로 629 (논현동,SidusHQ타워 A동)<span>ARS 02-6005-6000</span>Copyright ⓒ iHQ all right reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>

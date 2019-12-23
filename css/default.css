@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+body{
+    font-family:'NanumBarunGothic',sans-serif;
+}
+body,h1,h2,h3,h4,h5,h6,p,div,ul,a,p.img,dl,dt,dd{
+    margin:0;
+    padding:0;
+}
+li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+span{
+    display:block;
+}
+.cf:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.inner{
+    width:1200px;
+    margin:0 auto;
+}
